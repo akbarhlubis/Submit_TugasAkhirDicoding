@@ -2,7 +2,6 @@
 
 * {
     font-family: 'Poppins', sans-serif;
-
 }
 
 /* Bagian Header */
@@ -11,4 +10,201 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 33px 120px;
+    align-items: center;
+    background-color: #2e2e2e;
+}
+
+nav ul {
+    list-style: none;
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration-line: underline;
+    color: #DFD368;
+}
+
+header button {
+    width: 143px;
+    height: 39px;
+    color: #DFD368;
+    background-color: transparent;
+
+    border: 1px solid #DFD368;
+    border-radius: 10px;
+
+    font-weight: bolder;
+}
+
+header button:hover {
+    color: #2e2e2e;
+    background-color: #DFD368;
+
+}
+
+/* Bagian Main */
+main{
+    display: flex;
+    flex-direction: column;
+}
+main .hero{
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 120px;
+    border-radius: 0px 0px 10px 10px;
+}
+article{
+    width: 662px;
+    padding: 10px;
+}
+
+article h1{
+    color: white;
+    font-size: 70px;
+}
+
+#beranda article p{
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+article button{
+    width: 143px;
+    height: 39px;
+    color: #DFD368;
+    background-color: transparent;
+    width: 220px;
+    height: 54px;
+    border: 1px solid #DFD368;
+    border-radius: 10px;
+
+    font-weight: bolder;
+}
+article button:hover {
+    color: #2e2e2e;
+    background-color: #DFD368;
+
+}
+
+main #fitur{
+    background-color: white;
+    padding: 33px 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #fitur .fitur-handle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main #fitur .card{
+    padding-top: 20px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#tentang{
+    background-color: #DFD368;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deskripsi{
+    display: flex;
+    columns: row;
+    align-items: center;
+}
+
+#tentang article p{
+    width: 550px;
+    font-size: 24px;
+    color: black;
+}
+
+.deskripsi img{
+    color: #2e2e2e;
+    width: 500px;
+}
+
+#tampilan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#tampilan img{
+    width: 100%;
+}
+
+#ajakan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#ajakan button{
+    width: 143px;
+    height: 39px;
+    color: #DFD368;
+    background-color: transparent;
+    width: 220px;
+    height: 54px;
+    border: 1px solid #DFD368;
+    border-radius: 10px;
+
+    font-weight: bolder;
+}
+#ajakan button:hover {
+    color: #2e2e2e;
+    background-color: #DFD368;
+
+}
+
+#ajakan p{
+    width: 500px;
+}
+
+/* membuat bagian footer */
+footer{
+    background-color: #2e2e2e;
+    border-radius: 10px 10px 0px 0px;
+    padding: 0px 120px;
+
+}
+footer .isi{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* mengatur media query */
+@media screen {
+    
 }
