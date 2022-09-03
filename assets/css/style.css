@@ -205,6 +205,9 @@ footer .isi{
 }
 
 /* mengatur media query */
-@media screen {
-    
+@media screen and (max-width: 720px) {
+    header nav, button{
+        display: none;
+    }
+
 }
