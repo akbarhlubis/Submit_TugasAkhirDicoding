@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*{
+    border: 1px solid red;
+}
+
+/* html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+  } */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+    align-items: center;
 }
 
 /* Bagian Header */
@@ -11,10 +20,10 @@ header {
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    padding: 33px 120px;
-    width: 80%;
+    width: 100%;
+    padding: 20px 0px;
+    margin: 0px;
     background: rgba(46, 46, 46, 0.5);
-    border-radius: 10px;
 }
 
 nav ul {
@@ -135,7 +144,6 @@ main #fitur .card{
 
 .deskripsi{
     display: flex;
-    columns: row;
     align-items: center;
 }
 
@@ -147,7 +155,7 @@ main #fitur .card{
 
 .deskripsi img{
     color: #2e2e2e;
-    width: 500px;
+    width: 80%;
 }
 
 #tampilan{
@@ -207,9 +215,50 @@ footer .isi{
 }
 
 /* mengatur media query */
-@media screen and (max-width: 720px) {
-    header nav, button{
+@media screen and (max-width: 500px) {
+    header nav, header button,#tampilan, .hero aside{
         display: none;
     }
-
+    main .hero, main #fitur .fitur-handle, .deskripsi{
+        flex-direction: column;
+    }
+    main .hero{
+        padding: 100px 20px 30px;
+    }
+    #beranda article{
+        width: 320px;
+    }
+    #beranda article h1{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    article{
+        width: 320px;
+    }
+    #tentang article p{
+        font-size: 16px;
+        width: 320px;
+    }
+    #ajakan{
+        padding: 20px;
+    }
+    #ajakan p{
+        width: 320px;
+    }
+    footer{
+        padding: 0px;
+    }
+    footer .isi{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .deskripsi img{
+        background-color: aqua;
+        width: 100%;
+    }
 }
