@@ -14,10 +14,11 @@ body {
 header {
     display: flex;
     position: fixed;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    padding: 20px 0px;
+    justify-content: space-between;
+    outline: 1px solid #DFD368;
+    align-items: center;
+    padding: 20px 20px;
     margin: 0px;
     background: rgba(46, 46, 46, 0.5);
 }
@@ -69,7 +70,7 @@ main .hero{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 33px 120px;
+    padding: 100px 120px;
     border-radius: 0px 0px 10px 10px;
 }
 article{
@@ -211,7 +212,7 @@ footer .isi{
 }
 
 /* mengatur media query */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     header nav, header button,#tampilan, .hero aside{
         display: none;
     }
